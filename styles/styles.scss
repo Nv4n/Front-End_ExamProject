@@ -2,11 +2,11 @@
 @import '../01-settings/_settings-typography';
 @import '../01-settings/_settings-shadows';
 @import '../01-settings/_settings-paddings.scss';
+@import '../01-settings/_settings-mixins.scss';
 
 @import '../02-generic/_generic-modern-normalize.scss';
 
 @import '../03-elements/_elements-decoration.scss';
-@import '../03-elements/_elements-margins.scss';
 @import '../03-elements/_elements-cursor.scss';
 
 @import '../04-objects/_objects-container.scss';
@@ -14,6 +14,7 @@
 @import '../05-components/_components-header.scss';
 @import '../05-components/_components-button.scss';
 @import '../05-components/_components-header-banner.scss';
+@import '../05-components/_components-banner.scss';
 
 @import '../06-utilities/_utilities-font.scss';
 @import '../06-utilities/_utilities-text-transform.scss';

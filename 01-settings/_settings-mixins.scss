@@ -1,0 +1,35 @@
+@mixin small-paragraph-font {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@mixin small-paragraph-font--important {
+    font-size: 14px !important;
+    line-height: 16px !important;
+}
+
+@mixin tiny-paragraph-font {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@mixin tiny-paragraph-font--important {
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+
+@mixin fade-in-transition-color($color) {
+    transition: color 0.3s ease-out;
+
+    &:hover {
+        color: $color;
+    }
+}
+
+@mixin fade-in-transition-icon($icon) {
+    transition: content 0.3s ease-out;
+
+    &:hover {
+        content: $icon;
+    }
+}

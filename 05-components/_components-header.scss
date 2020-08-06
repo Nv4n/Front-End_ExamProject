@@ -7,20 +7,19 @@
 
 	&__list-item {
 		padding: 10px $padding-default;
-		margin: 0 25px;
+		margin: 0 $padding-default;
 	}
 
 	&__list-item--button {
-		margin: 0 25px;
+		margin: 0 $padding-secondary;
 	}
 
 	&__page-link {
+		@include small-paragraph-font;
+		font-weight: bold;
 		text-transform: uppercase;
 		color: $grey-700;
-
-		font-weight: bold;
-		font-size: 13px;
-		line-height: 16px;
+		@include fade-in-transition-color($secondary-800);
 	}
 
 	&__logo {

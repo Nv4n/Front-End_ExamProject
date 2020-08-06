@@ -3,7 +3,7 @@
 	margin: 0 auto;
 
 	color: $white;
-	padding: 64px 0;
+	padding: $padding-big 0;
 
 	&--blue {
 		min-height: 300px;
@@ -22,7 +22,6 @@
 	}
 
 	&--orange {
-		padding: 64px 0;
 		background-color: $secondary-600;
 
 		&__info {
