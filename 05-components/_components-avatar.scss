@@ -1,0 +1,36 @@
+.c-avatar {
+    border: 6px solid $primary-300;
+    border-radius: 50%;
+
+    &--hoverable {
+        position: absolute;
+        width: 175px;
+        height: 175px;
+        border: none;
+        //* secondary-800 with alpha channel
+        background: url(../assets/images/info-icon.svg) center no-repeat, rgba(255, 145, 0, 0.8);
+        top: 5px;
+        left: 5px;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    &__info-name {
+        display: block;
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+
+        color: $primary-300;
+    }
+
+    &__info-labour {
+        display: block;
+        @include small-paragraph-font;
+
+        color: $grey-400;
+    }
+}

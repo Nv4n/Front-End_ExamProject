@@ -1,0 +1,16 @@
+.c-page-separator {
+    width: 100%;
+    height: 10px;
+
+    &--banner-grey {
+        background-color: $grey-500;
+    }
+
+    &--banner-blue {
+        background-color: $blue-200;
+    }
+
+    &--dots {
+        background: url(../assets/images/dots-horizontal-long-blue.svg);
+    }
+}

@@ -33,3 +33,26 @@
         content: $icon;
     }
 }
+
+@mixin page-wrapper {
+    margin: 0 75px;
+}
+
+@mixin horizontal-list ($isCentered) {
+    display: flex;
+    flex-flow: row;
+
+    @if $isCentered==true {
+        align-items: center;
+    }
+}
+
+@mixin vertical-list($isCentered) {
+    display: flex;
+    flex-flow: column wrap;
+
+    @if $isCentered==true {
+        justify-content: center;
+        align-items: center;
+    }
+}

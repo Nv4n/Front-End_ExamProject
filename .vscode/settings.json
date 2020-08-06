@@ -116,6 +116,7 @@
 	"workbench.colorTheme": "Horizon",
 	"liveServer.settings.multiRootWorkspaceName": "Front-End_ExamProject",
 	"cSpell.words": [
+		"hoverable",
 		"interactable"
 	]
 }

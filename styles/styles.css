@@ -307,10 +307,6 @@ button {
   cursor: pointer;
 }
 
-o-page-wrapper {
-  margin: 0 75px;
-}
-
 .o-horizontal-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,19 +562,6 @@ o-page-wrapper {
   margin: 24px 32px;
 }
 
-.c-banner__section-separator {
-  width: 100%;
-  height: 10px;
-}
-
-.c-banner__section-separator--grey {
-  background-color: #919191;
-}
-
-.c-banner__section-separator--blue {
-  background-color: #92CDFB;
-}
-
 .c-input-transparent {
   padding: 16px;
   border-radius: 6px;
@@ -605,6 +588,78 @@ o-page-wrapper {
   color: #FFFFFF;
 }
 
+.c-page-separator {
+  width: 100%;
+  height: 10px;
+}
+
+.c-page-separator--banner-grey {
+  background-color: #919191;
+}
+
+.c-page-separator--banner-blue {
+  background-color: #92CDFB;
+}
+
+.c-page-separator--dots {
+  background: url(../assets/images/dots-horizontal-long-blue.svg);
+}
+
+.c-avatar {
+  border: 6px solid #41BEAD;
+  border-radius: 50%;
+}
+
+.c-avatar--hoverable {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border: none;
+  background: url(../assets/images/info-icon.svg) center no-repeat, rgba(255, 145, 0, 0.8);
+  top: 5px;
+  left: 5px;
+}
+
+.c-avatar--hoverable:hover {
+  opacity: 0;
+}
+
+.c-avatar__info-name {
+  display: block;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #41BEAD;
+}
+
+.c-avatar__info-labour {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B2B2B2;
+}
+
+.c-main {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 75px;
+  -ms-grid-rows: max-content min-content 1fr;
+      grid-template-rows: -webkit-max-content -webkit-min-content 1fr;
+      grid-template-rows: max-content min-content 1fr;
+}
+
+.c-main__avatar-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr;
+  row-gap: 64px;
+  justify-items: center;
+  margin: 100px auto;
+}
+
 .u-paragraph--small {
   font-size: 14px !important;
   line-height: 16px !important;
@@ -617,4 +672,8 @@ o-page-wrapper {
 
 .u-text-uppercase {
   text-transform: uppercase !important;
+}
+
+.u-text-centered {
+  text-align: center !important;
 }
