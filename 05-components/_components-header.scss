@@ -3,9 +3,10 @@
 	justify-content: space-around;
 	align-items: center;
 	box-shadow: $box-shadow-2dp;
+	background-color: $white;
 
 	&__list-item {
-		padding: 10px 30px;
+		padding: 10px $padding-default;
 		margin: 0 25px;
 	}
 

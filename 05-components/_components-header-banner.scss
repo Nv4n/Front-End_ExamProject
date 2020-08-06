@@ -1,1 +1,42 @@
-.
+.c-header-banner {
+	width: 100%;
+	margin: 0 auto;
+
+	color: $white;
+	padding: 64px 0;
+
+	&--blue {
+		min-height: 300px;
+		background-color: $blue-400;
+
+		&__course-level {
+			position: relative;
+			top: -$padding-default;
+			left: 50%;
+			padding: 5px 10px;
+
+			border-radius: 4px;
+			background-color: $secondary-500;
+			font-weight: bold;
+		}
+	}
+
+	&--orange {
+		padding: 64px 0;
+		background-color: $secondary-600;
+
+		&__info {
+			width: 50%;
+			padding-top: $padding-default;
+			text-align: center;
+		}
+	}
+
+	&--map {
+		max-height: 400px;
+
+		&__image {
+			top: -75px;
+		}
+	}
+}

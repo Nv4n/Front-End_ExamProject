@@ -17,6 +17,10 @@ h6 {
   font-family: Montserrat;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 a,
 p,
 span,
@@ -328,6 +332,29 @@ button {
           align-items: center;
 }
 
+.o-vertical-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.o-vertical-list--centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.o-position-wrapper {
+  position: relative;
+}
+
 .c-header {
   padding: 10px 0;
   -ms-flex-pack: distribute;
@@ -337,10 +364,11 @@ button {
           align-items: center;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
 }
 
 .c-header__list-item {
-  padding: 10px 30px;
+  padding: 10px 24px;
   margin: 0 25px;
 }
 
@@ -372,4 +400,59 @@ button {
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   color: #FFFFFF;
+}
+
+.c-header-banner {
+  width: 100%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  padding: 64px 0;
+}
+
+.c-header-banner--blue {
+  min-height: 300px;
+  background-color: #44A9F8;
+}
+
+.c-header-banner--blue__course-level {
+  position: relative;
+  top: -24px;
+  left: 50%;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #FFC20A;
+  font-weight: bold;
+}
+
+.c-header-banner--orange {
+  padding: 64px 0;
+  background-color: #FFB402;
+}
+
+.c-header-banner--orange__info {
+  width: 50%;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.c-header-banner--map {
+  max-height: 400px;
+}
+
+.c-header-banner--map__image {
+  top: -75px;
+}
+
+.u-paragraph--small {
+  font-size: 14px !important;
+  line-height: 16px !important;
+}
+
+.u-paragraph--tiny {
+  font-size: 12px !important;
+  line-height: 14px !important;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase !important;
 }
