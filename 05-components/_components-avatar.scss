@@ -2,6 +2,34 @@
     border: 6px solid $primary-300;
     border-radius: 50%;
 
+    //todo animate avatar info hover
+    //!just a presentation
+    &--blurred {
+        transition: filter 0.4s ease-in;
+
+        &:hover {
+            filter: blur(4px);
+        }
+    }
+
+    &--hovered {
+        position: absolute;
+        width: 175px;
+        height: 175px;
+        border: none;
+        opacity: 0;
+        top: 5px;
+        left: 5px;
+        transition: all 0.5s ease-in;
+
+        &:hover {
+            //* secondary-800 with alpha channel
+            background: url(../assets/images/info-icon.svg) center no-repeat, rgba(255, 145, 0, 0.8);
+            opacity: 1;
+        }
+    }
+
+    //!end of presentation
     &--hoverable {
         position: absolute;
         width: 175px;
@@ -16,6 +44,7 @@
             opacity: 0;
         }
     }
+
 
     &__info-name {
         display: block;

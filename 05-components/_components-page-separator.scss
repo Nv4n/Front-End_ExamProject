@@ -12,5 +12,11 @@
 
     &--dots {
         background: url(../assets/images/dots-horizontal-long-blue.svg);
+
+        &--vertical-orange {
+            background: url(../assets/images/dots-vertical-long-orange.svg);
+            height: 100%;
+            width: 10px;
+        }
     }
 }

@@ -1,8 +1,6 @@
-
-
 .o-horizontal-list {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
 
     &--centered {
         align-items: center;
@@ -11,7 +9,7 @@
 
 .o-vertical-list {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
 
     &--centered {
         justify-content: center;
@@ -21,4 +19,10 @@
 
 .o-position-wrapper {
     position: relative;
+}
+
+.o-position-fixed {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }

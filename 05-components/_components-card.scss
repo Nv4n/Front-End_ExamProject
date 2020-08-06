@@ -1,0 +1,22 @@
+.c-card-avatar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 100px 0;
+
+    &__info {
+        margin: 0 $padding-secondary;
+    }
+}
+
+.c-card-info {
+
+    &__heading {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    //todo finish info card, finish main page, finish map page, add animation, do the responsive
+}

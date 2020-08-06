@@ -1,7 +1,14 @@
 .c-main {
     display: grid;
     @include page-wrapper;
-    grid-template-rows: max-content min-content 1fr;
+
+    &--trainers {
+        grid-template-rows: max-content min-content 1fr;
+    }
+
+    &--courses {
+        grid-template-rows: max-content max-content max-content max-content max-content;
+    }
 
     &__avatar-grid {
         display: grid;
@@ -14,5 +21,13 @@
 
     }
 
-    &__card-grid {}
+    &__card-grid {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    &__paragraph {
+        margin-bottom: $padding-default;
+        color: $grey-700;
+    }
 }
