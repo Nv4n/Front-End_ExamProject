@@ -1,0 +1,18 @@
+.o-page-wrapper {
+    &--grid {
+        display: grid;
+    }
+
+    &--standard {
+        margin: 0 75px;
+    }
+}
+
+.o-horizontal-list {
+    display: flex;
+    flex-flow: row;
+
+    &--centered {
+        align-items: center;
+    }
+}

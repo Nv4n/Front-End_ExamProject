@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
-@import url("https://use.typekit.net/xgz6hmm.css");
+
+/* Webfont: Lato-Regular */
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
 
 h1,
 h2,
@@ -12,13 +20,18 @@ h6 {
 
 a,
 p,
-span {
-    font-family: Lato;
+span,
+button {
+    font-family: 'Lato';
 }
 
+a,
 p {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 125%;
+}
+
+button {
+    font-size: 14px;
+    font-weight: bold;
 }

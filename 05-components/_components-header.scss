@@ -1,0 +1,28 @@
+.c-header {
+	padding: 10px 0;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: $box-shadow-2dp;
+
+	&__list-item {
+		padding: 10px 30px;
+		margin: 0 25px;
+	}
+
+	&__list-item--button {
+		margin: 0 25px;
+	}
+
+	&__page-link {
+		text-transform: uppercase;
+		color: $grey-700;
+
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 16px;
+	}
+
+	&__logo {
+		margin-left: 15px;
+	}
+}

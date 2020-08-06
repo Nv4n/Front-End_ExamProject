@@ -1,0 +1,16 @@
+.c-button {
+	//     display: flex;
+	// flex-direction: row;
+	padding: 10px 20px;
+	border-radius: 100px;
+	text-transform: uppercase;
+
+	&--primary {
+		border: none;
+		background-color: $secondary-800;
+		box-shadow: $box-shadow-4dp;
+		color: $white;
+	}
+
+	// &--secondary {}
+}

@@ -1,2 +1,15 @@
-@import url(../02-generic/_generic-modern-normalize.scss);
-@import url(../01-settings/_settings-colors.scss);
+@import '../01-settings/_settings-colors.scss';
+@import '../01-settings/_settings-typography';
+@import '../01-settings/_settings-shadows';
+
+@import '../02-generic/_generic-modern-normalize.scss';
+
+@import '../03-elements/_elements-decoration.scss';
+@import '../03-elements/_elements-margins.scss';
+@import '../03-elements/_elements-cursor.scss';
+
+@import '../04-objects/_objects-container.scss';
+
+@import '../05-components/_components-header.scss';
+@import '../05-components/_components-button.scss';
+@import '../05-components/_components-header-banner.scss';
