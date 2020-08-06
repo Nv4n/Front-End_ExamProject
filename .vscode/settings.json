@@ -114,5 +114,8 @@
 	"material-icon-theme.folders.theme": "specific",
 	"material-icon-theme.saturation": 1,
 	"workbench.colorTheme": "Horizon",
-	"liveServer.settings.multiRootWorkspaceName": "Front-End_ExamProject"
+	"liveServer.settings.multiRootWorkspaceName": "Front-End_ExamProject",
+	"cSpell.words": [
+		"interactable"
+	]
 }
