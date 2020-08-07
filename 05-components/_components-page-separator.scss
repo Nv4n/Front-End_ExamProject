@@ -13,8 +13,14 @@
     &--dots {
         background: url(../assets/images/dots-horizontal-long-blue.svg);
 
-        &--vertical-orange {
+        &--vertical-orange-long {
             background: url(../assets/images/dots-vertical-long-orange.svg);
+            height: 100%;
+            width: 10px;
+        }
+
+        &--vertical-orange-short {
+            background: url(../assets/images/dots-vertical-short-orange.svg);
             height: 100%;
             width: 10px;
         }

@@ -5,3 +5,19 @@
 .section-paragraph {
     margin-right: 100px;
 }
+
+.section-info-cards {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    justify-items: center;
+}
+
+.section-certificate-cards {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+// .section-

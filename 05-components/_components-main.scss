@@ -8,6 +8,8 @@
 
     &--courses {
         grid-template-rows: max-content max-content max-content max-content max-content;
+        row-gap: $padding-big;
+        margin: 150px 0;
     }
 
     &__avatar-grid {

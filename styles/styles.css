@@ -327,6 +327,12 @@ p {
           align-items: center;
 }
 
+.o-horizontal-list--top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .o-vertical-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +363,10 @@ p {
   z-index: 100;
 }
 
+.o-page-wrapper {
+  margin: 0 75px;
+}
+
 .c-header {
   padding: 10px 0;
   -ms-flex-pack: distribute;
@@ -366,7 +376,7 @@ p {
           align-items: center;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .c-header__list-item {
@@ -389,7 +399,7 @@ p {
 }
 
 .c-header__page-link:hover {
-  color: #FF9100;
+  color: #ff9100;
 }
 
 .c-header__logo {
@@ -404,22 +414,22 @@ p {
 
 .c-button--primary {
   border: none;
-  background-color: #FF9100;
+  background-color: #ff9100;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-header-banner {
   width: 100%;
   margin: 0 auto;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 64px 0;
 }
 
 .c-header-banner--blue {
   min-height: 300px;
-  background-color: #44A9F8;
+  background-color: #44a9f8;
 }
 
 .c-header-banner--blue__course-level {
@@ -428,12 +438,12 @@ p {
   left: 50%;
   padding: 5px 10px;
   border-radius: 4px;
-  background-color: #FFC20A;
+  background-color: #ffc20a;
   font-weight: bold;
 }
 
 .c-header-banner--orange {
-  background-color: #FFB402;
+  background-color: #ffb402;
 }
 
 .c-header-banner--orange__info {
@@ -490,7 +500,7 @@ p {
 .c-banner--footer__list-heading {
   margin-bottom: 16px;
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-banner--footer__list-item {
@@ -498,14 +508,14 @@ p {
 }
 
 .c-banner--footer__list-item-content {
-  color: #E6E6E6;
+  color: #e6e6e6;
   text-align: start;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
 
 .c-banner--footer__list-item-content:hover {
-  color: #41BEAD;
+  color: #41bead;
 }
 
 .c-banner--footer__copyright {
@@ -561,12 +571,12 @@ p {
 }
 
 .c-banner--blue {
-  background-color: #66B9F8;
+  background-color: #66b9f8;
 }
 
 .c-banner--blue__text {
   margin-bottom: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-banner--blue__interactable {
@@ -576,27 +586,27 @@ p {
 .c-input-transparent {
   padding: 16px;
   border-radius: 6px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .c-input-transparent::-webkit-input-placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-input-transparent:-ms-input-placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-input-transparent::-ms-input-placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-input-transparent::placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .c-page-separator {
@@ -609,15 +619,21 @@ p {
 }
 
 .c-page-separator--banner-blue {
-  background-color: #92CDFB;
+  background-color: #92cdfb;
 }
 
 .c-page-separator--dots {
   background: url(../assets/images/dots-horizontal-long-blue.svg);
 }
 
-.c-page-separator--dots--vertical-orange {
+.c-page-separator--dots--vertical-orange-long {
   background: url(../assets/images/dots-vertical-long-orange.svg);
+  height: 100%;
+  width: 10px;
+}
+
+.c-page-separator--dots--vertical-orange-short {
+  background: url(../assets/images/dots-vertical-short-orange.svg);
   height: 100%;
   width: 10px;
 }
@@ -640,15 +656,18 @@ p {
   margin: 0 32px;
 }
 
+.c-card-info__icon {
+  margin-right: 32px;
+}
+
 .c-card-info__heading {
-  font-family: Montserrat;
-  font-weight: 600;
+  font-family: Montserrat !important;
   font-size: 30px;
   line-height: 36px;
 }
 
 .c-avatar {
-  border: 6px solid #41BEAD;
+  border: 6px solid #41bead;
   border-radius: 50%;
 }
 
@@ -701,14 +720,14 @@ p {
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
-  color: #41BEAD;
+  color: #41bead;
 }
 
 .c-avatar__info-labour {
   display: block;
   font-size: 14px;
   line-height: 16px;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
 .c-main {
@@ -727,6 +746,8 @@ p {
   -ms-grid-rows: max-content max-content max-content max-content max-content;
       grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
       grid-template-rows: max-content max-content max-content max-content max-content;
+  row-gap: 64px;
+  margin: 150px 0;
 }
 
 .c-main__avatar-grid {
@@ -759,10 +780,11 @@ p {
 }
 
 .c-block-certificate {
-  background: #D6D6D6;
+  background: #d6d6d6;
   border-radius: 12px;
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 100px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .section-clip {
@@ -779,6 +801,28 @@ p {
   margin-right: 100px;
 }
 
+.section-info-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content;
+      grid-template-rows: -webkit-max-content;
+      grid-template-rows: max-content;
+  -ms-grid-columns: 1fr 0.5fr 1fr;
+      grid-template-columns: 1fr 0.5fr 1fr;
+  justify-items: center;
+}
+
+.section-certificate-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content;
+      grid-template-rows: -webkit-max-content;
+      grid-template-rows: max-content;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
 .u-paragraph--small {
   font-size: 14px !important;
   line-height: 16px !important;
@@ -789,10 +833,19 @@ p {
   line-height: 14px !important;
 }
 
+.u-font-bold {
+  font-weight: bold;
+}
+
 .u-text-uppercase {
   text-transform: uppercase !important;
 }
 
 .u-text-centered {
   text-align: center !important;
+}
+
+.u-linkify {
+  text-decoration: underline;
+  color: #ff9100;
 }

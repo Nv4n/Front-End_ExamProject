@@ -10,10 +10,12 @@
 }
 
 .c-card-info {
+    &__icon {
+        margin-right: $padding-secondary;
+    }
 
     &__heading {
-        font-family: Montserrat;
-        font-weight: 600;
+        font-family: Montserrat !important;
         font-size: 30px;
         line-height: 36px;
     }

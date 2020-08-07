@@ -5,6 +5,10 @@
     &--centered {
         align-items: center;
     }
+
+    &--top {
+        align-items: flex-start;
+    }
 }
 
 .o-vertical-list {
@@ -25,4 +29,8 @@
     position: sticky;
     top: 0px;
     z-index: 100;
+}
+
+.o-page-wrapper {
+    margin: 0 75px;
 }
