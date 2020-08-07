@@ -32,10 +32,16 @@
 	}
 
 	&--map {
+		display: flex;
+		position: relative;
 		max-height: 400px;
+		padding: 0;
+		justify-content: center;
 
 		&__image {
+			position: relative;
 			top: -75px;
+			z-index: -2;
 		}
 	}
 }

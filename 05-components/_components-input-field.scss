@@ -1,13 +1,24 @@
 .c-input-transparent {
     padding: 16px;
     border-radius: 6px;
-    border: 1px solid $white;
-    background-color: transparent;
-    color: $white;
-
     box-shadow: none;
+    background-color: transparent;
 
-    &::placeholder {
+    &--white {
+        border: 1px solid $white;
         color: $white;
+
+        &::placeholder {
+            color: $white;
+        }
+    }
+
+    &--grey {
+        border: 1px solid $grey-500;
+        color: $grey-500;
+
+        &::placeholder {
+            color: $grey-500;
+        }
     }
 }

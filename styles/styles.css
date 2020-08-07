@@ -26,6 +26,16 @@ h1 {
   font-size: 36px;
 }
 
+.h2-alike {
+  font-family: Montserrat;
+  font-size: 30px;
+}
+
+.h3-alike--montserrat {
+  font-family: Montserrat;
+  font-size: 24px;
+}
+
 .h3-alike--lato {
   font-family: Lato;
   font-size: 18px;
@@ -412,7 +422,7 @@ p {
 }
 
 .c-button {
-  padding: 10px 20px;
+  padding: 14px 32px;
   border-radius: 100px;
   text-transform: uppercase;
 }
@@ -458,11 +468,21 @@ p {
 }
 
 .c-header-banner--map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   max-height: 400px;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .c-header-banner--map__image {
+  position: relative;
   top: -75px;
+  z-index: -2;
 }
 
 .c-banner__content {
@@ -591,27 +611,51 @@ p {
 .c-input-transparent {
   padding: 16px;
   border-radius: 6px;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: transparent;
 }
 
-.c-input-transparent::-webkit-input-placeholder {
+.c-input-transparent--white {
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
 
-.c-input-transparent:-ms-input-placeholder {
+.c-input-transparent--white::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.c-input-transparent::-ms-input-placeholder {
+.c-input-transparent--white:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.c-input-transparent::placeholder {
+.c-input-transparent--white::-ms-input-placeholder {
   color: #ffffff;
+}
+
+.c-input-transparent--white::placeholder {
+  color: #ffffff;
+}
+
+.c-input-transparent--grey {
+  border: 1px solid #919191;
+  color: #919191;
+}
+
+.c-input-transparent--grey::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.c-input-transparent--grey:-ms-input-placeholder {
+  color: #919191;
+}
+
+.c-input-transparent--grey::-ms-input-placeholder {
+  color: #919191;
+}
+
+.c-input-transparent--grey::placeholder {
+  color: #919191;
 }
 
 .c-page-separator {
@@ -669,6 +713,10 @@ p {
   font-family: Montserrat !important;
   font-size: 30px;
   line-height: 36px;
+}
+
+.c-card-transport-info__heading {
+  color: #41bead;
 }
 
 .c-avatar {
@@ -864,6 +912,61 @@ p {
   background: url(../assets/images/course-studies-block.svg);
 }
 
+.section-transport-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 100px 75px;
+  row-gap: 50px;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+  background-color: #fff8e1;
+}
+
+.section-transport-info__heading {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  grid-column: span 3;
+  text-align: center;
+}
+
+.section-transport-info__info {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.section-message {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content min-content min-content min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+      grid-template-rows: min-content min-content min-content min-content;
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px 32px;
+}
+
+.section-message__heading, .section-message__big-message {
+  grid-column: span 2;
+}
+
+.section-message__heading {
+  color: #41bead;
+}
+
+.section-message__big-message {
+  position: relative;
+  min-height: 200px;
+}
+
 .u-paragraph--small {
   font-size: 14px !important;
   line-height: 16px !important;
@@ -889,6 +992,11 @@ p {
 .u-align-centered {
   -ms-grid-column-align: center !important;
       justify-self: center !important;
+}
+
+.u-align-start {
+  -ms-flex-line-pack: start !important;
+      align-content: start !important;
 }
 
 .u-linkify {

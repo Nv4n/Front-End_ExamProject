@@ -7,7 +7,7 @@
 		<title>Контакти</title>
 	</head>
 	<body>
-		<header class="c-header o-horizontal-list o-horizontal-list--centered .o-position-fixed ">
+		<header class="c-header o-horizontal-list o-horizontal-list--centered .o-position-fixed">
 			<div class="o-horizontal-list">
 				<img src="../assets/images/logo-arrow.svg" alt="arrow-down" />
 				<img class="c-header__logo" src="../assets/images/logo-vertical.svg" alt="Logo" />
@@ -26,44 +26,117 @@
 				</ul>
 			</nav>
 		</header>
-		<aside class="header-banner--map"><img class="header-banner--map__image" src="../assets/images/map.svg" alt="Map" /></aside>
-		<main></main>
-		<aside></aside>
+		<aside class="c-header-banner c-header-banner--map">
+			<img class="c-header-banner--map__image" src="../assets/images/map.svg" alt="Map" />
+		</aside>
+		<main>
+			<section class="section-message">
+				<span class="h2-alike section-message__heading u-font-bold u-align-centered">Пишете ни</span>
+				<input class="c-input-transparent c-input-transparent--grey" type="text" placeholder="Заглавие" />
+				<input class="c-input-transparent c-input-transparent--grey" type="email" placeholder="Имейл адрес" />
+				<textarea
+					class="section-message__big-message c-input-transparent c-input-transparent--grey"
+					cols="100"
+					rows="10"
+					placeholder="Съобщение"
+				></textarea>
+				<button class="c-button c-button--primary">изпрати</button>
+			</section>
+
+			<section class="section-transport-info">
+				<span class="c-card-transport-info__heading section-transport-info__heading h2-alike u-font-bold"
+					>Как да стигна до SoftUni?</span
+				>
+
+				<article class="section-transport-info__info">
+					<span class="c-card-transport-info__heading h3-alike--montserrat u-font-bold">Метро</span>
+					<p>Метростанция <span class="u-font-bold">Жолио Кюри</span> - на 5-10 минути от СофтУни</p>
+					<p>Метростанция <span class="u-font-bold">Г. М. Димитров</span> - на 5-10 минути от СофтУни</p>
+				</article>
+
+				<article class="section-transport-info__info">
+					<span class="c-card-transport-info__heading h3-alike--montserrat u-font-bold">Автобуси</span>
+					<p>
+						<span class="u-font-bold">67, 413 </span> - Спирка “СТЦ Интерпред” (1112) или спирка “ж.к. Дианабад” (0627) (на бул.
+						Драган Цанков)
+					</p>
+					<p><span class="u-font-bold">88, 94, 102</span> - Спирка “ПК Диана” (1342) (на 10-ина минути от СофтУни)</p>
+					<p>
+						<span class="u-font-bold">88, 280, 294 </span> - Спирка “СБАЛ по онкология” (0764) (на кръстовището на бул. Г. М.
+						Димитров и бул. Драган Цанков)
+					</p>
+					<p>
+						<span class="u-font-bold">123, 69, 70, 88, 67, 413 </span> - Спирка “СБАЛ по онкология” (2542) (на кръстовището на
+						бул. Г. М. Димитров и бул. Драган Цанков)
+					</p>
+				</article>
+
+				<article class="section-transport-info__info">
+					<span class="c-card-transport-info__heading h3-alike--montserrat u-font-bold">Маршрутки</span>
+					<p><span class="u-font-bold">5</span> - минава през метростанцията на бул Г. М. Димитров</p>
+					<p><span class="u-font-bold">27</span> - минава през метростанцията на бул Г. М. Димитров</p>
+				</article>
+			</section>
+		</main>
 		<footer class="c-banner c-banner--footer o-position-wrapper">
 			<div class="c-banner__section-separator c-banner__section-separator--grey"></div>
 			<div class="c-banner__content c-banner__content--footer">
 				<img class="c-banner--footer__mascot" src="../assets/images/robot.svg" alt="robot" />
 				<ul class="o-vertical-list c-banner--footer__list-1">
 					<h3 class="c-banner--footer__list-heading">Softuni Kids</h3>
-					<li class="c-banner--footer__list-item" ><a class="c-banner--footer__list-item-content" href="#">Начало</a></li>
-					<li class="c-banner--footer__list-item" ><a class="c-banner--footer__list-item-content" href="#">Летни академии</a></li>
-					<li class="c-banner--footer__list-item" ><a class="c-banner--footer__list-item-content" href="./trainers.html">Преподаватели</a></li>
-					<li class="c-banner--footer__list-item" ><a class="c-banner--footer__list-item-content" href="#">Блог</a></li>
-					<li class="c-banner--footer__list-item" ><a class="c-banner--footer__list-item-content" href="./contacts.html">Контакти</a></li>
-					<li class="c-banner--footer__list-item" ><a class="c-banner--footer__list-item-content" href="#">Общи условия</a></li>
-					<li class="c-banner--footer__list-item" ><a class="c-banner--footer__list-item-content" href="#">Лични данни</a></li>
+					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">Начало</a></li>
+					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">Летни академии</a></li>
+					<li class="c-banner--footer__list-item">
+						<a class="c-banner--footer__list-item-content" href="./trainers.html">Преподаватели</a>
+					</li>
+					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">Блог</a></li>
+					<li class="c-banner--footer__list-item">
+						<a class="c-banner--footer__list-item-content" href="./contacts.html">Контакти</a>
+					</li>
+					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">Общи условия</a></li>
+					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">Лични данни</a></li>
 				</ul>
 				<ul class="o-vertical-list c-banner--footer__list c-banner--footer__list-2">
 					<h3 class="c-banner--footer__list-heading">Всички обучения</h3>
-					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="./index.html">Курсове</a></li>
+					<li class="c-banner--footer__list-item">
+						<a class="c-banner--footer__list-item-content" href="./index.html">Курсове</a>
+					</li>
 					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">Събития</a></li>
 				</ul>
 				<ul class="o-vertical-list c-banner--footer__list c-banner--footer__list-3">
 					<h3 class="c-banner--footer__list-heading">Всички инициативи</h3>
-					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">Software University</a></liclassc-banner--footer__list-item>
+					<li class="c-banner--footer__list-item">
+						<a class="c-banner--footer__list-item-content" href="#">Software University</a>
+					</li>
 					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">SoftUni Digital</a></li>
-					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">SoftUni Creative</a></li>
-					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">SoftUni Svetlina</a></li>
-					<li class="c-banner--footer__list-item"><a class="c-banner--footer__list-item-content" href="#">SoftUni Foundation</a></li>
+					<li class="c-banner--footer__list-item">
+						<a class="c-banner--footer__list-item-content" href="#">SoftUni Creative</a>
+					</li>
+					<li class="c-banner--footer__list-item">
+						<a class="c-banner--footer__list-item-content" href="#">SoftUni Svetlina</a>
+					</li>
+					<li class="c-banner--footer__list-item">
+						<a class="c-banner--footer__list-item-content" href="#">SoftUni Foundation</a>
+					</li>
 				</ul>
 				<ul class="o-vertical-list c-banner--footer__list c-banner--footer__list-4">
 					<h3 class="c-banner--footer__list-heading">Намери ни</h3>
 					<div class="o-horizontal-list">
 						<li>
-							<a href="#"><img class="c-banner--footer__contact-icon c-banner--footer__contact-icon--facebook" src="../assets/images/facebook-icon.svg" alt="facebook"/></a>
+							<a href="#"
+								><img
+									class="c-banner--footer__contact-icon c-banner--footer__contact-icon--facebook"
+									src="../assets/images/facebook-icon.svg"
+									alt="facebook"
+							/></a>
 						</li>
 						<li>
-							<a href="#"><img class="c-banner--footer__contact-icon c-banner--footer__contact-icon--IG" src="../assets/images/IG-icon.svg" alt="instagram" /></a>
+							<a href="#"
+								><img
+									class="c-banner--footer__contact-icon c-banner--footer__contact-icon--IG"
+									src="../assets/images/IG-icon.svg"
+									alt="instagram"
+							/></a>
 						</li>
 					</div>
 				</ul>

@@ -22,3 +22,9 @@
 
     //todo , finish main page, finish map page, add animation, do the responsive
 }
+
+.c-card-transport-info {
+    &__heading {
+        color: $primary-300;
+    }
+}
