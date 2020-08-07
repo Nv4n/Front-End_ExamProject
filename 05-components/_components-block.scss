@@ -10,3 +10,27 @@
     padding: 100px;
     box-shadow: $box-shadow-1dp;
 }
+
+.c-block-lecture-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 16px 0;
+    padding: 14px;
+    padding-right: 60px;
+
+    border-radius: 6px;
+
+    color: $grey-700;
+    background-color: $white;
+
+    &::after {
+        position: absolute;
+        content: url(../assets/images/arrow-down.svg);
+        max-height: 10px;
+        right: 20px;
+        top: 14px;
+
+
+    }
+}

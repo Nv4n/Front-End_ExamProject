@@ -26,6 +26,11 @@ h1 {
   font-size: 36px;
 }
 
+.h3-alike--lato {
+  font-family: Lato;
+  font-size: 18px;
+}
+
 a,
 p,
 span,
@@ -787,6 +792,26 @@ p {
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
+.c-block-lecture-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 16px 0;
+  padding: 14px;
+  padding-right: 60px;
+  border-radius: 6px;
+  color: #565656;
+  background-color: #ffffff;
+}
+
+.c-block-lecture-link::after {
+  position: absolute;
+  content: url(../assets/images/arrow-down.svg);
+  max-height: 10px;
+  right: 20px;
+  top: 14px;
+}
+
 .section-clip {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,6 +848,22 @@ p {
   justify-items: center;
 }
 
+.section-course-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content;
+      grid-template-rows: -webkit-max-content;
+      grid-template-rows: max-content;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding: 64px 75px;
+  min-height: 560px;
+  background: url(../assets/images/course-studies-block.svg);
+}
+
 .u-paragraph--small {
   font-size: 14px !important;
   line-height: 16px !important;
@@ -834,7 +875,7 @@ p {
 }
 
 .u-font-bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .u-text-uppercase {
@@ -845,7 +886,12 @@ p {
   text-align: center !important;
 }
 
+.u-align-centered {
+  -ms-grid-column-align: center !important;
+      justify-self: center !important;
+}
+
 .u-linkify {
-  text-decoration: underline;
-  color: #ff9100;
+  text-decoration: underline !important;
+  color: #ff9100 !important;
 }

@@ -20,4 +20,12 @@
     justify-items: center;
 }
 
-// .section-
+.section-course-info {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+    padding: $padding-big 75px;
+    min-height: 560px;
+    background: url(../assets/images/course-studies-block.svg);
+}
