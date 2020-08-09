@@ -1,9 +1,8 @@
 .c-header-banner {
-	width: 100%;
 	margin: 0 auto;
-
-	color: $white;
 	padding: $padding-big 0;
+	width: 100%;
+	color: $white;
 
 	&--blue {
 		min-height: 300px;
@@ -25,8 +24,8 @@
 		background-color: $secondary-600;
 
 		&__info {
-			width: 50%;
 			padding-top: $padding-default;
+			width: 50%;
 			text-align: center;
 		}
 	}
@@ -34,8 +33,8 @@
 	&--map {
 		display: flex;
 		position: relative;
-		max-height: 400px;
 		padding: 0;
+		max-height: 400px;
 		justify-content: center;
 
 		&__image {

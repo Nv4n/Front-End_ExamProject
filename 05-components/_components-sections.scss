@@ -6,6 +6,7 @@
     margin-right: 100px;
 }
 
+//* Card sections
 .section-info-cards {
     display: grid;
     grid-template-rows: max-content;
@@ -20,13 +21,22 @@
     justify-items: center;
 }
 
+.section-trainers-cards {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+//* Info sections
 .section-course-info {
     display: grid;
     grid-template-rows: max-content;
     grid-template-columns: 2fr 1fr;
     align-items: end;
-    padding: $padding-big 75px;
+
     min-height: 560px;
+
+    padding: $padding-big 75px;
+
     background: url(../assets/images/course-studies-block.svg);
 }
 
@@ -34,10 +44,10 @@
     display: grid;
     grid-template-rows: max-content max-content;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 100px 75px;
-
     row-gap: 50px;
     column-gap: $padding-secondary;
+
+    padding: 100px 75px;
 
     background-color: $secondary-50;
 
@@ -52,6 +62,7 @@
     }
 }
 
+//* Specific sections
 .section-message {
     display: grid;
     grid-template-rows: min-content min-content min-content min-content;
@@ -72,7 +83,15 @@
     &__big-message {
         position: relative;
         min-height: 200px;
-
-
     }
+}
+
+.section-avatar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+    row-gap: $padding-big;
+    justify-items: center;
+
+    margin: 100px auto;
 }

@@ -1,14 +1,14 @@
 .c-block-play-button {
     position: absolute;
-    right: 50%;
     top: $padding-big;
+    right: 50%;
 }
 
 .c-block-certificate {
-    background: $grey-300;
-    border-radius: 12px;
     padding: 100px;
+    border-radius: 12px;
     box-shadow: $box-shadow-1dp;
+    background: $grey-300;
 }
 
 .c-block-lecture-link {
@@ -26,9 +26,9 @@
 
     &::after {
         position: absolute;
-        content: url(../assets/images/arrow-down.svg);
-        max-height: 10px;
-        right: 20px;
         top: 14px;
+        right: 20px;
+        max-height: 10px;
+        content: url(../assets/images/arrow-down.svg);
     }
 }

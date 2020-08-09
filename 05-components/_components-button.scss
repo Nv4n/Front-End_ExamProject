@@ -1,14 +1,12 @@
 .c-button {
-	//     display: flex;
-	// flex-direction: row;
 	padding: 14px $padding-secondary;
 	border-radius: 100px;
 	text-transform: uppercase;
 
 	&--primary {
 		border: none;
-		background-color: $secondary-800;
 		box-shadow: $box-shadow-4dp;
+		background-color: $secondary-800;
 		color: $white;
 	}
 

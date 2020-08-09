@@ -1,65 +1,59 @@
 .c-avatar {
-    border: 6px solid $primary-300;
-    border-radius: 50%;
+	border: 6px solid $primary-300;
+	border-radius: 50%;
 
-    //todo animate avatar info hover
-    //!just a presentation
-    &--blurred {
-        transition: filter 0.4s ease-in;
+	&__container {
+		border: none;
 
-        &:hover {
-            filter: blur(4px);
-        }
-    }
+		&:hover {
+			.c-avatar--hoverable {
+				border: 6px solid transparent;
+				filter: blur(4px);
+			}
 
-    &--hovered {
-        position: absolute;
-        width: 175px;
-        height: 175px;
-        border: none;
-        opacity: 0;
-        top: 5px;
-        left: 5px;
-        transition: all 0.5s ease-in;
+			.c-avatar--hoverable__overlay {
+				opacity: 0.8;
+			}
+		}
+	}
 
-        &:hover {
-            //* secondary-800 with alpha channel
-            background: url(../assets/images/info-icon.svg) center no-repeat, rgba(255, 145, 0, 0.8);
-            opacity: 1;
-        }
-    }
+	&--hoverable {
+		transition: filter 0.4s ease-in, border 0.4s ease-in;
 
-    //!end of presentation
-    &--hoverable {
-        position: absolute;
-        width: 175px;
-        height: 175px;
-        border: none;
-        //* secondary-800 with alpha channel
-        background: url(../assets/images/info-icon.svg) center no-repeat, rgba(255, 145, 0, 0.8);
-        top: 5px;
-        left: 5px;
+		&__overlay {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			z-index: 2;
 
-        &:hover {
-            opacity: 0;
-        }
-    }
+			width: 175px;
+			height: 175px;
 
+			opacity: 0;
 
-    &__info-name {
-        display: block;
-        font-family: Montserrat;
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: bold;
+			//* secondary-800 with alpha channel
+			background: url(../assets/images/info-icon.svg) center no-repeat, rgba(255, 145, 0, 0.8);
 
-        color: $primary-300;
-    }
+			cursor: pointer;
+			transition: opacity 0.3s ease-in;
+		}
+	}
 
-    &__info-labour {
-        display: block;
-        @include small-paragraph-font;
+	&__info-name {
+		display: block;
 
-        color: $grey-400;
-    }
+		font-family: Montserrat;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: bold;
+
+		color: $primary-300;
+	}
+
+	&__info-labour {
+		display: block;
+		@include small-paragraph-font;
+
+		color: $grey-400;
+	}
 }

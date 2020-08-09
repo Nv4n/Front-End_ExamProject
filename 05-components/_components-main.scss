@@ -7,25 +7,10 @@
     }
 
     &--courses {
+        margin: 150px 0;
+
         grid-template-rows: max-content max-content max-content max-content max-content;
         row-gap: $padding-big;
-        margin: 150px 0;
-    }
-
-    &__avatar-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-row: 1fr 1fr 1fr 1fr;
-        row-gap: $padding-big;
-        justify-items: center;
-
-        margin: 100px auto;
-
-    }
-
-    &__card-grid {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
     }
 
     &__paragraph {
