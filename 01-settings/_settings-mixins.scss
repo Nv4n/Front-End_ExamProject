@@ -28,14 +28,6 @@
     }
 }
 
-@mixin fade-in-transition-icon($icon) {
-    transition: content 0.3s ease-out;
-
-    &:hover {
-        content: $icon;
-    }
-}
-
 //* Objects mixins
 @mixin page-wrapper {
     margin: 0 75px;
