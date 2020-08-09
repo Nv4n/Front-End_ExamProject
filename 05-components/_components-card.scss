@@ -7,6 +7,17 @@
     &__info {
         margin: 0 $padding-secondary;
     }
+
+    @include only-phones {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: $padding-secondary 0;
+
+        &__info {
+            margin: $padding-secondary $padding-secondary;
+        }
+    }
 }
 
 .c-card-info {

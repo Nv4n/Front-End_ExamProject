@@ -41,6 +41,10 @@
     margin: 0 75px;
 }
 
+@mixin exclude-page-wrapper {
+    margin: 0;
+}
+
 @mixin horizontal-list ($isCentered) {
     display: flex;
     flex-flow: row;
@@ -57,5 +61,12 @@
     @if $isCentered==true {
         justify-content: center;
         align-items: center;
+    }
+}
+
+//*Media queries
+@mixin only-phones {
+    @media only screen and (max-width:1200px) {
+        @content
     }
 }

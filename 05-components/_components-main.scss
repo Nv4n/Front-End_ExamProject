@@ -17,4 +17,10 @@
         margin-bottom: $padding-default;
         color: $grey-700;
     }
+
+    @include only-phones {
+        & {
+            @include exclude-page-wrapper
+        }
+    }
 }

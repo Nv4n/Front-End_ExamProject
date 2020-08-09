@@ -25,4 +25,32 @@
 	&__logo {
 		margin-left: 15px;
 	}
+
+	@include only-phones {
+		&__logo {
+			content: url(../assets/images/logo-vertical.svg);
+		}
+
+		&__arrow {
+			content: url(../assets/images/logo-arrow-grey.svg);
+		}
+
+		&__list-item {
+			position: absolute;
+			opacity: 0;
+		}
+
+		&__list-item--button {
+			margin: 0 $padding-default/2;
+		}
+
+		&__button::after {
+			position: absolute;
+			margin-right: 25px;
+			right: -15px;
+			height: 16px;
+			width: 24px;
+			content: url(../assets/images/menu-phone.svg);
+		}
+	}
 }

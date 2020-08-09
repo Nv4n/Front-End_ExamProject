@@ -382,6 +382,12 @@ p {
   margin: 0 75px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .o-page-wrapper {
+    margin: 0 20px;
+  }
+}
+
 .c-header {
   padding: 10px 0;
   -ms-flex-pack: distribute;
@@ -419,6 +425,30 @@ p {
 
 .c-header__logo {
   margin-left: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .c-header__logo {
+    content: url(../assets/images/logo-vertical.svg);
+  }
+  .c-header__arrow {
+    content: url(../assets/images/logo-arrow-grey.svg);
+  }
+  .c-header__list-item {
+    position: absolute;
+    opacity: 0;
+  }
+  .c-header__list-item--button {
+    margin: 0 12px;
+  }
+  .c-header__button::after {
+    position: absolute;
+    margin-right: 25px;
+    right: -15px;
+    height: 16px;
+    width: 24px;
+    content: url(../assets/images/menu-phone.svg);
+  }
 }
 
 .c-button {
@@ -473,7 +503,6 @@ p {
   display: flex;
   position: relative;
   padding: 0;
-  max-height: 400px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -483,6 +512,16 @@ p {
   position: relative;
   top: -75px;
   z-index: -2;
+}
+
+@media only screen and (max-width: 1200px) {
+  .c-header-banner--orange__info {
+    width: 100%;
+  }
+  .c-header-banner--map__image {
+    max-width: 100%;
+    top: -25px;
+  }
 }
 
 .c-banner__content {
@@ -599,6 +638,13 @@ p {
   margin: 24px 32px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .c-banner {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
 .c-input-transparent {
   padding: 16px;
   border-radius: 6px;
@@ -696,6 +742,25 @@ p {
   margin: 0 32px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .c-card-avatar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 32px 0;
+  }
+  .c-card-avatar__info {
+    margin: 32px 32px;
+  }
+}
+
 .c-card-info__icon {
   margin-right: 32px;
 }
@@ -791,6 +856,12 @@ p {
   color: #565656;
 }
 
+@media only screen and (max-width: 1200px) {
+  .c-main {
+    margin: 0;
+  }
+}
+
 .c-block-play-button {
   position: absolute;
   top: 64px;
@@ -868,6 +939,17 @@ p {
       grid-template-columns: 2fr 2fr;
 }
 
+@media only screen and (max-width: 1200px) {
+  .section-trainers-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: min-content 1fr;
+        grid-template-rows: -webkit-min-content 1fr;
+        grid-template-rows: min-content 1fr;
+    grid-auto-flow: row;
+  }
+}
+
 .section-course-info {
   display: -ms-grid;
   display: grid;
@@ -920,10 +1002,11 @@ p {
   -ms-grid-columns: max-content max-content;
       grid-template-columns: -webkit-max-content -webkit-max-content;
       grid-template-columns: max-content max-content;
+  gap: 32px 32px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 32px 32px;
+  margin-bottom: 100px;
 }
 
 .section-message__heading, .section-message__big-message {
@@ -948,6 +1031,17 @@ p {
   row-gap: 64px;
   justify-items: center;
   margin: 100px auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-avatar-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-row: 1;
+    grid-row: 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
 }
 
 .u-paragraph--small {

@@ -81,4 +81,9 @@
             margin: $padding-default $padding-secondary;
         }
     }
+
+    @include only-phones {
+        position: absolute;
+        opacity: 0;
+    }
 }

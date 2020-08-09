@@ -24,6 +24,12 @@
 .section-trainers-cards {
     display: grid;
     grid-template-columns: 2fr 2fr;
+
+    @include only-phones {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr;
+        grid-auto-flow: row;
+    }
 }
 
 //* Info sections
@@ -67,9 +73,10 @@
     display: grid;
     grid-template-rows: min-content min-content min-content min-content;
     grid-template-columns: max-content max-content;
+    gap: $padding-secondary $padding-secondary;
     justify-content: center;
 
-    gap: $padding-secondary $padding-secondary;
+    margin-bottom: 100px;
 
     &__heading,
     &__big-message {
@@ -92,6 +99,15 @@
     grid-row: 1fr 1fr 1fr 1fr;
     row-gap: $padding-big;
     justify-items: center;
-
     margin: 100px auto;
+
+    @include only-phones {
+        & {
+            grid-template-columns: 1fr;
+            grid-row: 1fr;
+            grid-auto-flow: row;
+
+            justify-items: center;
+        }
+    }
 }

@@ -34,3 +34,9 @@
 .o-page-wrapper {
     margin: 0 75px;
 }
+
+@include only-phones {
+    .o-page-wrapper {
+        margin: 0 20px;
+    }
+}

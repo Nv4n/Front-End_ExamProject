@@ -34,13 +34,27 @@
 		display: flex;
 		position: relative;
 		padding: 0;
-		max-height: 400px;
 		justify-content: center;
 
 		&__image {
 			position: relative;
 			top: -75px;
 			z-index: -2;
+		}
+	}
+
+	@include only-phones {
+		&--orange {
+			&__info {
+				width: 100%;
+			}
+		}
+
+		&--map {
+			&__image {
+				max-width: 100%;
+				top: -25px;
+			}
 		}
 	}
 }
