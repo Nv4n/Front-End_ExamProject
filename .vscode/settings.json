@@ -12,9 +12,7 @@
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-
 	"json.format.enable": true,
-
 	"cSpell.language": "en",
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
@@ -24,16 +22,18 @@
 	"prettier.printWidth": 130,
 	"html.format.enable": true,
 	"liveSassCompile.settings.generateMap": false,
-
 	"editor.suggestSelection": "first",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"gitlens.hovers.currentLine.over": "line",
 	"git-graph.dialog.merge.squashCommits": true,
 	"git-graph.fetchAvatars": true,
-
 	"liveServer.settings.CustomBrowser": "chrome",
-
-	"auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"],
+	"auto-rename-tag.activationOnLanguage": [
+		"html",
+		"xml",
+		"php",
+		"javascript"
+	],
 	"auto-close-tag.activationOnLanguage": [
 		"xml",
 		"php",
@@ -55,9 +55,9 @@
 	],
 	"auto-close-tag.enableAutoCloseTag": true,
 	"auto-close-tag.enableAutoCloseSelfClosingTag": true,
-
 	"better-comments.multilineComments": true,
-	"better-comments.tags": [{
+	"better-comments.tags": [
+		{
 			"tag": "!",
 			"color": "#FF2D00",
 			"strikethrough": false,
@@ -109,11 +109,10 @@
 	"better-comments.highlightPlainText": true,
 	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 	"material-icon-theme.folders.color": "#1f8eed",
-
 	"material-icon-theme.activeIconPack": "angular",
 	"material-icon-theme.folders.theme": "specific",
 	"material-icon-theme.saturation": 1,
-	"workbench.colorTheme": "Horizon",
+	"workbench.colorTheme": "Omni",
 	"liveServer.settings.multiRootWorkspaceName": "Front-End_ExamProject",
 	"cSpell.words": [
 		"hoverable",
